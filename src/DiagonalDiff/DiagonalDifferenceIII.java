@@ -8,6 +8,8 @@ public class DiagonalDifferenceIII {
 
         int leftSum = 0;
         int rightSum = 0;
+
+
         for (int i = 0; i < arr.size(); i++) {
             leftSum += arr.get(i).get(i);
             rightSum += arr.get(i).get(arr.size()-(1+i));
