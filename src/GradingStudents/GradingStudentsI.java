@@ -1,6 +1,7 @@
 package GradingStudents;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class GradingStudentsI {
     public static void main(String[] args) {
@@ -10,12 +11,11 @@ public class GradingStudentsI {
 
         //for example: if grade = 84   -> round up to 85
 
-        ArrayList<Integer> grades = new ArrayList<>();
-        grades.add(90);
-        grades.add(81);
+        List<Integer> grades = new ArrayList<>();
         grades.add(73);
-        grades.add(39);
-        grades.add(30);
+        grades.add(67);
+        grades.add(38);
+        grades.add(33);
 //        for (int grade : grades) {
 //            System.out.println(grade);
 //        }
@@ -31,9 +31,7 @@ public class GradingStudentsI {
         for (int i = 0; i < grades.size(); i++) {
             int rawGrade = grades.get(i);
             int r = rawGrade % 5;
-            int difference = Math.abs(r - 5);
-
-
+            int difference = (5-r);
             if (rawGrade < 38) {
                 System.out.println(rawGrade);
             } else if (rawGrade >= 38) {
