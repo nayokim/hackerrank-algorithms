@@ -25,6 +25,9 @@ public class AppleAndOrangeI {
                 orangeCount++;
             }
         }
-        System.out.println(appleCount + "\n" + orangeCount);
+
+        System.out.println(appleCount);
+        System.out.println(orangeCount);
+
     }
 }
