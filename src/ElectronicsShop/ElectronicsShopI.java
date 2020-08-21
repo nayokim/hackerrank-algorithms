@@ -25,7 +25,5 @@ public class ElectronicsShopI {
            }
         }
         System.out.println(max);
-
-
     }
 }
